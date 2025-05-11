@@ -1,5 +1,5 @@
 # Exercise 1
-# print("Hello world\nHello world\nHello world\nHello world")
+# print("Hello world\n" * 4)
 
 # Exercise 2
 # print(99**3*8)
