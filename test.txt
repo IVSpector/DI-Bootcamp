@@ -1,3 +1,7 @@
 hello
 
 We love coding and coding loves us
+
+git add .
+git commit -m "name version"
+git push
