@@ -2,7 +2,7 @@
 #
 # # A lists are sequence of elements
 # # Syntax
-# some_list = list("Item 1") #to convert other sequence in a list
+some_list = list("Item 1") #to convert other sequence in a list
 # other_list = ["Item 1"] #the best way to create an empty list
 #
 # print(some_list)
@@ -85,22 +85,22 @@
 # Given this list:
 # list1 = [5, 10, 15, 20, 25, 50, 20]
 # find the value 20 in the list, and if it is present, replace it with 200. Only update the first occurrence of a value
-
-list1 = [20, 5, 10, 15, 20, 25, 50, 20]
+#
+# list1 = [20, 5, 10, 15, 20, 25, 50, 20]
+# # print(list1)
+# # x = list1.index(20)
+# # del list1[x]
+# # list1.insert(x,200)
+# # print(list1)
+#
+# if list1.index(20) or list1.index(20) == 0:
+#     index_found = list1.index(20)
+#     list1.remove(20)
+#     list1.insert(index_found, 200)
 # print(list1)
-# x = list1.index(20)
-# del list1[x]
-# list1.insert(x,200)
+#
+# if 20 in list1:
+#     index_found = list1.index(20)
+#     list1.remove(20)
+#     list1.insert(index_found, 200)
 # print(list1)
-
-if list1.index(20) or list1.index(20) == 0:
-    index_found = list1.index(20)
-    list1.remove(20)
-    list1.insert(index_found, 200)
-print(list1)
-
-if 20 in list1:
-    index_found = list1.index(20)
-    list1.remove(20)
-    list1.insert(index_found, 200)
-print(list1)
