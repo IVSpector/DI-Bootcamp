@@ -1,0 +1,14 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W1/D2/ExerciseXP/W1D2Ex.py
+suggestions for improvement:
+- In Exercise 1, the set concatenation should use `union()` to combine sets without duplicates, not `intersection()` which finds common elements.  The provided code uses intersection, resulting in incorrect output.
+- Exercise 2 incorrectly attempts to add to a tuple.  The code should explain *why* it's impossible to modify a tuple after creation, as instructed.
+- Exercise 4's float generation is inefficient and less readable than it could be. A more concise and efficient approach using list comprehension is possible.
+- Exercise 8 lacks error handling. If the user inputs non-numeric values for toppings, the code will crash.
+- Exercise 9's bonus part could be improved by using a list comprehension for better readability and conciseness. The current implementation with looping is functional but less elegant.
+- In Exercise 10, the `while` loop for removing 'Pastrami' is not the most efficient method. A list comprehension could offer cleaner code.
+Brief justification:
+- correctness: Most exercises are correctly implemented, but Exercise 1 uses `intersection` instead of `union` for set concatenation; Exercise 2 fails to explain tuple immutability; Exercise 4 uses an inefficient method; Exercise 8 lacks error handling; and Exercise 10 uses a less efficient approach for removing items from a list.
+- readability: The code is generally readable, but some parts can be improved.  For example, Exercise 4 could use a more compact approach using list comprehension. Exercise 9 bonus section can be improved.  More descriptive variable names in some cases would also enhance readability.
+- performance: The performance is generally good, but Exercise 4's loop-based approach is less efficient than the list comprehension alternative.  Repeatedly using `index` and `del` in Exercise 10 is less efficient than using list comprehension.
+- security: The code does not contain any obvious security vulnerabilities, as it does not involve handling external input or performing system-level operations.
+

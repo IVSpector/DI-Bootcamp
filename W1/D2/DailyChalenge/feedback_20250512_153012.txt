@@ -1,0 +1,11 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W1/D2/DailyChalenge/W1D1Cha.py
+suggestions for improvement:
+- Challenge 1: The code for Challenge 1 is efficient and correctly implements the requirements.  No significant improvements are needed.
+- Challenge 2: The `while` loop within the `while` loop in Challenge 2 could be slightly improved for readability.  A `for` loop with an index and conditional check might be clearer. Consider adding input validation to handle non-string inputs.
+- General: Add comments to explain the purpose of each section of the code and the algorithm used to solve the problems. This makes the code easier to understand and maintain.
+Brief justification:
+- correctness: Both challenges are solved correctly.  Challenge 1 accurately generates a list of multiples as specified in the examples. Challenge 2 effectively removes consecutive duplicate letters from the input string, adhering to all examples and specifications in the chapter content.  The outputs precisely match the expected outputs for all provided test cases.
+- readability: The code is generally readable.  However, the nested `while` loop in Challenge 2 could be made clearer.  More descriptive variable names would also slightly improve readability. The lack of comments reduces the overall score slightly.
+- performance: The performance of both solutions is acceptable for the problem size. The time complexity of Challenge 1 is O(n) where n is the length of the list, and Challenge 2 is also O(n) where n is the length of the string. There's no obvious performance bottleneck; however, for extremely large inputs, optimization might be considered, but that's outside the scope of the current challenge level. The current implementation provides good performance for reasonably sized inputs.
+- security: The code doesn't introduce any known security vulnerabilities.  It directly uses user inputs without any attempt to execute them as code, preventing command injection or similar attacks.  The potential for errors stems from invalid user inputs (non-numeric values for the numbers in Challenge 1), but this is a limitation of the input handling and not a security vulnerability.
+
