@@ -152,20 +152,20 @@
 # print(user_a)
 
 
-sample_dict = {
-    "name": "Kelly",
-    "age": 25,
-    "salary": 8000,
-    "city": "New york"
-
-}
-# sample_dict.update("name")
-# sample_dict.pop("name")
-# sample_dict.move_to_end("name")
-sample_dict['name2'] = sample_dict.pop('name')
-
-# sample_dict["name"] = "123"
-print(sample_dict)
+# sample_dict = {
+#     "name": "Kelly",
+#     "age": 25,
+#     "salary": 8000,
+#     "city": "New york"
+#
+# }
+# # sample_dict.update("name")
+# # sample_dict.pop("name")
+# # sample_dict.move_to_end("name")
+# sample_dict['name2'] = sample_dict.pop('name')
+#
+# # sample_dict["name"] = "123"
+# print(sample_dict)
 
 # keys_to_remove = ["name", "salary"]
 
@@ -176,3 +176,10 @@ print(sample_dict)
 #     del sample_dict[keys]
 #
 # print(sample_dict)
+
+new_str = "Volkswagen, Toyota, Ford Motor, Honda, Chevrolet"
+print(new_str)
+new_list = new_str.split(", ")
+print(len(new_list))
+new_list.sort(reverse=True)
+print(new_list)
