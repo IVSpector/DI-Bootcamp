@@ -22,7 +22,7 @@ def player_input(player):
         if len(move) != 2:
             print("Try again. Enter the position (x y) or 'q': ")
         elif not move[0].isnumeric() or not move[1].isnumeric():
-            break
+            print("You should input only numbers!")
         elif 1 <= int(move[0]) <= 3 and 1 <= int(move[1]) <= 3:
             move_ok = [int(move[0]) - 1, int(move[1]) - 1]
             if table[move_ok[0]][move_ok[1]] == " ":
@@ -30,7 +30,7 @@ def player_input(player):
             else:
                 print("This field is occupied. Try again. Enter the position (x y) or 'q': ")
         else:
-            print("Position must be between 1 to 2. Try again. Enter the position (x y) or 'q': ")
+            print("Position must be between 1 to 3. Try again. Enter the position (x y) or 'q': ")
         display_board(table)
 
 
@@ -61,31 +61,34 @@ def tie():
     for tie_line in table:
         tie_counter += len(''.join(tie_line).replace(' ',''))
     if tie_counter == 9:
-        print("Tie")
-        return tie_counter
+        return "tie"
+
+
 
 
 
 table = create_board()
 q = ""
 players = {"Player1": "X", "Player2": "O"}
-players_name = ["Player1", "Player2"]
+players_name = list(players.keys())
 finish_game = ""
 counter_moves = 0
 player_turn = 0
 
 while not finish_game:
     counter_moves += 1
-    # player_turn = counter_moves%2
     display_board(table)
-    # print(players[players_name[counter_moves%2]])
     move_result = player_input(players_name[counter_moves%2])
+    if move_result is None:
+        print("Quit game")
+        break
     if move_result:
         table[move_result[0]][move_result[1]] = players[players_name[counter_moves%2]]
     finish_game = check_win(players_name[counter_moves%2])
-    if not finish_game:
-        finish_game = tie()
-    if finish_game:
+    if tie():
+        print("It is tie")
+        break
+    if finish_game and not tie():
         display_board(table)
         print(f"{players_name[counter_moves%2]} is win")
 
