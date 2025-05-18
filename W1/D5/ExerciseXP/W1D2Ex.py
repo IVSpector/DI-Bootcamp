@@ -47,10 +47,10 @@ def check_win(player):
                 b += 1
         if a == 3 or b == 3:
             return player
-    for horizontal in range(3):
-        if table[horizontal][horizontal] == players[player]:
+    for diagonal in range(3):
+        if table[diagonal][diagonal] == players[player]:
             c1 += 1
-        if table[-horizontal-1][horizontal] == players[player]:
+        if table[-diagonal-1][diagonal] == players[player]:
             c2 += 1
     if c1 == 3 or c2 == 3:
         return player
