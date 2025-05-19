@@ -59,7 +59,7 @@
 # else:
 #     print(f"{list_dog[1].name} height than {list_dog[0].name}")
 
-# Exercise 3 : Who’s the song producer?
+# # Exercise 3 : Who’s the song producer?
 # class Song:
 #     def __init__(self, lyrics=[]):
 #         self.lyrics = lyrics
@@ -73,36 +73,36 @@
 #
 # stairway.sign_me_song()
 
-# # Exercise 4 : Afternoon at the Zoo
-# class Zoo:
-#     def __init__(self, zoo_name, animals=[]):
-#         self.zoo_name = zoo_name
-#         self.animals = animals
-#
-#     def add_animal(self, new_animal):
-#         if new_animal not in self.animals:
-#             self.animals.append(new_animal)
-#
-#     def get_animals(self):
-#         print(' '.join(self.animals))
-#
-#     def sell_animal(self, animal_sold):
-#         if animal_sold in self.animals:
-#             self.animals.remove(animal_sold)
-#
-#     def sort_animals(self):
-#         result_output = {}
-#         for name in sorted(self.animals):
-#             if name[0] in result_output.keys():
-#                 result_output[name[0]].append(name)
-#             else:
-#                 result_output.update({name[0]:[name]})
-#         return result_output
-#
-#     def get_groups(self):
-#         for key, value in self.sort_animals().items():
-#             print(f"{key}: {value}")
-#
+# Exercise 4 : Afternoon at the Zoo
+class Zoo:
+    def __init__(self, zoo_name, animals=[]):
+        self.zoo_name = zoo_name
+        self.animals = animals
+
+    def add_animal(self, new_animal):
+        if new_animal not in self.animals:
+            self.animals.append(new_animal)
+
+    def get_animals(self):
+        print(' '.join(self.animals))
+
+    def sell_animal(self, animal_sold):
+        if animal_sold in self.animals:
+            self.animals.remove(animal_sold)
+
+    def sort_animals(self):
+        result_output = {}
+        for name in sorted(self.animals):
+            if name[0] in result_output.keys():
+                result_output[name[0]].append(name)
+            else:
+                result_output.update({name[0]:[name]})
+        return result_output
+
+    def get_groups(self):
+        for key, value in self.sort_animals().items():
+            print(f"{key}: {value}")
+
 #
 # ramat_gan_safari = Zoo("ramat_gan_safari ", ['Cat', 'Cougar', 'Bear', 'Giraffe', 'Lion', 'Zebra'])
 # ramat_gan_safari.get_animals()
