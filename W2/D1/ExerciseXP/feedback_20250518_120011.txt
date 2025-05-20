@@ -1,0 +1,14 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W2/D1/ExerciseXP/W2D1Ex.py
+suggestions for improvement:
+- In Exercise 1, the function name `finde_oldest_cat` has a typo. It should be `find_oldest_cat`. 
+- In Exercise 1, the `Cat` class doesn't need a `print_cat` method; the printing logic should be in the function that finds the oldest cat. This improves separation of concerns.
+- Exercise 2's dog comparison could be simplified using a more concise `if/elif/else` structure or even the `max()` function.
+- In Exercise 3, the method name `sign_me_song` has a typo; it should be `sing_me_a_song`.
+- In Exercise 4, the `__init__` method could initialize the `animals` list directly rather than passing it as a parameter, simplifying object creation. 
+- The comments in Exercise 4 are sufficient, but adding a docstring to each method would enhance readability.
+Brief justification:
+- correctness: All exercises demonstrate a good understanding of classes, objects, methods, and attributes as outlined in the chapter content.  Minor typos in function and method names and small logic optimizations are the only deviations from correctness. Exercise 4's zoo class functionality (add, sell, sort, group) aligns well with its description, demonstrating a proper handling of lists and dictionaries.
+- readability: The code is generally readable, but some improvements could enhance clarity.  Minor typos affect readability. Inconsistent naming conventions (e.g., `finde_oldest_cat` instead of `find_oldest_cat`) and some unnecessarily complex logic reduce readability. Using more descriptive variable names and adding comments would improve readability further.
+- performance: The code's performance is generally acceptable for these small-scale examples. However, in Exercise 4, the `sort_animals` method could be optimized slightly.  The current approach iterates through the list multiple times. Using Python's built-in sorting mechanisms efficiently makes this process more efficient. For larger datasets, more efficient sorting would be needed.
+- security: There are no obvious security vulnerabilities in the provided code.  It operates within the scope of its defined tasks without external dependencies, minimizing any potential security risk.
+
