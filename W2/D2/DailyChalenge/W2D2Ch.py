@@ -23,7 +23,6 @@ class Pagination:
             return self.get_visible_items()
         else:
             raise ValueError ('ValueError')
-            # return self.get_visible_items()
 
     def first_page(self):
         self.current_index = 0
@@ -57,7 +56,7 @@ class Pagination:
             for character in self.items[stat_index:end_index]:
                 output_string += character + "\n"
         else:
-            for character in self.items[stat_index:end_index]:
+            for character in self.items[stat_index:]:
                 output_string += character + "\n"
         return output_string
 
