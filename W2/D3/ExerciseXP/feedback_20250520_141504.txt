@@ -1,0 +1,15 @@
+URL: URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W2/D3/ExerciseXP/W2D3Ex.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W2/D3/ExerciseXP/exercise_one.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W2/D3/ExerciseXP/func.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
