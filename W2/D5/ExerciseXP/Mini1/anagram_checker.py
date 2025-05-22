@@ -19,7 +19,7 @@ class AnagramChecker:
         return True if self.transform_word(word) in self.text_list else False
 
     def is_anagram(self, word_to_compare, word_from_list):
-        if len(word_from_list) != len(word_to_compare):
+        if len(word_from_list) != len(word_to_compare) or word_to_compare == word_from_list:
             return False
         split_list_word = list(word_from_list)
         for character in list(word_to_compare):
@@ -28,6 +28,8 @@ class AnagramChecker:
         return True if not split_list_word else False
 
     def get_anagrams(self, word):
+        if not self.is_valid_word(word):
+            return False
         compare_word = self.transform_word(word)
         list_words = []
         for each_word in self.text_list:
@@ -38,11 +40,4 @@ class AnagramChecker:
 
 file_path = "sowpods.txt"
 new_text = AnagramChecker.text_from_file(file_path)
-# print(new_text.text_list)
 
-# new_word1 = AnagramChecker("ONE TWO")
-# print(new_word1.transform_word("qwe"))
-# print(new_word1.is_valid_word("tw"))
-# print(new_word1.is_anagram("qwe", "ewq"))
-
-# print(new_text.get_anagrams("observatory"))
