@@ -35,13 +35,3 @@ class Game:
         result = self.get_game_result(user_turn, computer_turn)
         print(f"{self.item_dict(user_turn)}, {self.item_dict(computer_turn)}, {result}")
         return result
-
-
-
-
-# game = Game()
-# # game.get_user_item()
-# # print(game.get_computer_item())
-# # print(game.get_game_result(3, 1))
-# game.play()
-
