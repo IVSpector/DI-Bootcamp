@@ -1,0 +1,16 @@
+URL: URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W2/D2/XP/W2D2Ex.py
+suggestions for improvement:
+- In Exercise 1, the `Siamese`, `Bengal`, and `Chartreux` classes are unnecessarily created without adding unique attributes or methods.  The instructions suggest adding these, making the inheritance more meaningful.  Consider adding a breed-specific method or attribute.
+- In Exercise 2, the `run_speed()` calculation could be clarified with a comment explaining the formula (weight/age*18).
+- Exercise 3 is missing the import of the `random` module, which is necessary for `do_a_trick()` to function correctly.
+- In Exercise 3, the `PetDog` class's `__init__` method doesn't need to explicitly list inherited attributes; `super().__init__(name, age, weight)` handles this.
+- Exercise 3's `play()` method lacks implementation. It should concatenate the dog names correctly for the output string.
+- The `Dog` class's `fight()` method has a minor flaw in handling ties—it only checks for `<` and `>`, then `else`.  There could be a more concise and efficient way, even with more dogs added to the fight.
+Correctness: 90%
+-----
+URL: URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W2/D2/XP/W2D2Ex3.py
+suggestions for improvement:
+- The docstrings for methods could be improved to clearly state the purpose and parameters of each method.  This enhances readability.
+- In the `play` method, error handling could be added to gracefully handle cases where no other dogs are provided as arguments.  Currently, it implicitly depends on at least one argument being passed.
+Correctness: 95%
+-----

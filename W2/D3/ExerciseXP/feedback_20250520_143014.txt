@@ -1,0 +1,20 @@
+URL: URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W2/D3/ExerciseXP/W2D3Ex.py
+suggestions for improvement:
+- In the Currency class, the `get_amount` method could be simplified. It unnecessarily checks for both `int` and `Currency` types within the same method.  Separate methods for adding integers and Currency objects would improve readability and maintainability.
+- The `plural_single` method in the Currency class can be simplified using conditional expressions.
+- In Exercise 3, there's no need to pre-calculate `a`.  `random.choice` can be used directly on `all_letters`.
+- Exercise 5's `new_year_is` function has a mistake in the `datetime.strptime` format string.  `%M` is for minutes, not month. It should be `%m`.
+- Exercise 7's `generate_users` function unnecessarily uses a `while` loop and `new_user.clear()`. A more efficient approach is to directly append a new dictionary in each loop iteration.
+- Add error handling (try-except blocks) where appropriate to gracefully handle potential errors, such as incorrect date formats from the user in Exercise 6.
+Correctness: 90%
+-----
+URL: URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W2/D3/ExerciseXP/exercise_one.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W2/D3/ExerciseXP/func.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
