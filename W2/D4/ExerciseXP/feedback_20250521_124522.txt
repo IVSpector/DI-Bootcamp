@@ -1,0 +1,17 @@
+URL: URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W2/D4/ExerciseXP/W2D4Ex.py
+suggestions for improvement:
+- In `get_words_from_file`, error handling (e.g., `try-except` block) should be added to gracefully handle potential `FileNotFoundError` exceptions.
+- The `validation` function could be improved by providing a more informative error message to the user, indicating why the input is invalid (e.g., 'Input must be an integer between 2 and 20').
+- Exercise 1: Add input sanitization to prevent potential issues with unexpected characters or special symbols in the input.
+- Exercise 2: The code lacks error handling when writing to the file (e.g., `IOError`). A `try-except` block should be added.
+Correctness: 95%
+-----
+URL: URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W2/D4/ExerciseXP/WorkSalary.json
+suggestions for improvement:
+- The provided code snippet only addresses Exercise 2, and is missing the implementation for Exercise 1 (random sentence generator).
+- The code lacks error handling for file operations (e.g., `FileNotFoundError` when reading the word list in Exercise 1, or `IOError` when saving the JSON in Exercise 2).
+- Input validation in Exercise 1 could be more robust (e.g., checking for non-numeric input, handling negative numbers).
+- Exercise 1 should include more comprehensive string manipulation, such as capitalization at the start of the sentence and punctuation between words. 
+- The date format in Exercise 2 ('YYYY-MM-DD') should be dynamically obtained from user input instead of being hardcoded.
+Correctness: 80%
+-----
