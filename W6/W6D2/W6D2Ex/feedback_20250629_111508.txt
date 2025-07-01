@@ -1,0 +1,12 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W6/W6D2/W6D2Ex/W6D2Ex.sql
+suggestions for improvement:
+- In Exercise 1,  the queries are correct and directly address the instructions. However, specifying the table names (items and customers) would improve readability, especially for larger datasets where the table structures might not be readily apparent.
+- In Exercise 2, all queries are well-structured and achieve the stated goals.  The bonus question (finding the next 10 cheapest movies without LIMIT) demonstrates a good understanding of SQL. However, using aliases for table names (e.g., `FROM customer AS c`) would enhance readability and maintainability, particularly in more complex joins.
+- The query to find movies not in inventory (Exercise 2, question 13) uses a `LEFT JOIN` which is efficient but could be slightly optimized by using `NOT EXISTS` or `NOT IN` subqueries for better performance, especially in very large databases.
+- Add comments to explain the purpose of each query and the logic used for more complex tasks, this improves readability and maintainability.
+Brief justification:
+- correctness: The SQL code directly addresses all the exercises outlined in the chapter content.  Exercise 1 correctly queries the 'items' and 'customers' tables as described, using `ORDER BY` and `LIMIT` clauses appropriately. Exercise 2 demonstrates a good understanding of SQL queries using various clauses like `DISTINCT`, `JOIN`, `ORDER BY`, `ILIKE`, and window functions to answer all the given questions on the 'dvdrental' database.  The slight deduction is due to the potential for performance improvement in one query.
+- readability: The code is generally readable.  However, using more descriptive aliases for tables and adding comments would significantly improve its readability and make it easier to understand the intent of each query, particularly for more complex queries in Exercise 2.
+- performance: The queries are mostly efficient. However, some queries, like the one finding movies not in the inventory, could be further optimized with alternative approaches like `NOT EXISTS` for better performance in larger databases. The solution to the bonus question in Exercise 2 (finding the next 10 cheapest movies without LIMIT) is efficient and demonstrates good understanding but can still be improved.
+- security: The code does not contain any security vulnerabilities. It only performs read operations on the database, thus posing no security risk.
+
