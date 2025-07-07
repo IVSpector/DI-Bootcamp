@@ -1,0 +1,13 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W6/W6D5/W6D5Ch/W6D5Ch.sql
+suggestions for improvement:
+- Task 2: The query in Task 2 doesn't accurately identify the actor with the most movies above average rating. It selects actors with at least one movie above average, and then orders and limits to 1.  It should count the number of movies above average for each actor and then pick the actor with the maximum count. 
+- Task 3: The rolling average calculation in Task 3 is not entirely correct.  It uses `ROWS 3 PRECEDING` which considers the current row and three preceding rows, correctly implementing the rolling average for the last three movies, assuming the data is ordered by release_date. This needs clarifying, as there's no guarantee of ordered data from the database.
+- Task 4: Task 4's approach to identifying the highest-grossing movie series is flawed.  It groups by individual keywords, not by series. There's no definition of what constitutes a movie 'series' using only keywords. The problem requires a way to group movies into series based on shared keywords, which is not implemented here.  A more sophisticated approach is needed to define 'movie series' based on common keywords.
+- Improve Query Formatting: Consider adding more whitespace and line breaks for better readability in the SQL queries.
+- Add Comments: Include comments within each query to explain the purpose of specific CTEs and parts of the SQL statements for improved understanding.
+Brief justification:
+- correctness: Task 1 correctly calculates the average budget growth rate using window functions. Task 3 mostly correctly calculates the rolling average but relies on implicit data ordering. Tasks 2 and 4 have fundamental flaws in their logic. They do not fully address the problem statements as described in the chapter content, resulting in an overall correctness score of 75%.
+- readability: The code is reasonably readable.  The use of CTEs improves organization, making the logic easier to follow.  However, minor improvements in formatting and commenting could enhance readability further. 
+- performance: The queries use window functions efficiently, which generally leads to good performance. The use of CTEs also helps organize the logic, potentially enhancing performance. The primary performance issue stems from the logical flaws in tasks 2 and 4 that might cause unexpected behavior or inefficiency once corrected.
+- security: The provided code does not have any apparent security vulnerabilities. It's only performing read operations on the database.
+
