@@ -1,0 +1,12 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W1/D3/ExerciseXP/W1D1Ex.py
+suggestions for improvement:
+- Exercise 1: While functionally correct, using dictionary comprehension would be more concise and Pythonic.  The zip function is appropriately used.
+- Exercise 2: The bonus part is well-implemented, allowing for user input.  Error handling for non-numeric input is good. However, the initial family dictionary should be empty for a cleaner implementation of the bonus.
+- Exercise 3:  The code correctly manipulates the dictionary as instructed. The use of a list containing a single dictionary is unusual; a simple dictionary is sufficient.  The bonus part is correctly implemented by using the `.update()` method.
+- Exercise 4:  The code correctly generates the first two dictionaries. However, for the third dictionary,  it creates a dictionary where the indices are not correct after sorting due to using the index function within the loop. A different approach, such as `enumerate` after sorting, would be better.
+Brief justification:
+- correctness: The code largely fulfills the requirements of the exercises.  Minor issues exist in Exercise 3 (unnecessary list structure) and Exercise 4 (incorrect index mapping in the third dictionary).  The functionality of Exercises 1 and 2 align with the chapter's focus on dictionaries, loops, and conditionals.
+- readability: The code is generally readable, with clear variable names and comments.  However, some parts could be improved for conciseness and efficiency (e.g., Exercise 1 and 4).
+- performance: The code's performance is good.  The algorithms are efficient for the given tasks, although there's room for improvement by using more concise methods (dictionary comprehensions in Exercise 1).
+- security: There are no apparent security vulnerabilities in the provided code. Input validation is implemented in Exercise 2 to handle potential errors from user input (though it is a bit verbose).  No external data is accessed, reducing security concerns.
+

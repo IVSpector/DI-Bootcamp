@@ -1,0 +1,9 @@
+URL: URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W6/W6D3/W6D3Ch/W6D3Ch.sql
+suggestions for improvement:
+- In Part I, the `profile` table's primary key should be `profile_id`, not `customer_id`.  A one-to-one relationship can have primary keys in both tables. Using `customer_id` as the primary key in `profile` restricts adding a profile to a customer later.
+- In Part I,  the queries using subqueries for insertion into the `profile` table are inefficient. It's better to perform the insertion based on an already available `customer_id` in the `customer` table. This is achievable if you use a sequence that can be reused in both tables.
+- In Part II, the date format 'DD/MM/YYYY' is not standard in SQL. Use the YYYY-MM-DD format for better database compatibility.
+- Add indexes to foreign key columns in the `library` table for improved query performance. 
+- Improve error handling, for example, handle cases where a student or book might not exist when inserting into the `library` table.
+Correctness: 90%
+-----
