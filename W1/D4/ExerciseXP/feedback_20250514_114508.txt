@@ -1,0 +1,11 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W1/D4/ExerciseXP/W1D4Ex.py
+suggestions for improvement:
+- **Exercise 6: Magicians…** The `make_great()` function modifies the list in place, which is good. However, it uses a global variable, which is generally bad practice.  It's better to pass the list as an argument and return the modified list.  The `show_magicians` function also has a parameter that doesn't fit with how it's used.  It should accept the list directly, not just one name.
+- **Exercise 7: Temperature Advice** The bonus parts (floating-point temperatures and season-based temperatures) are implemented, but the season logic in the bonus section is quite basic.  A more robust approach would be to use a dictionary mapping months to seasons, allowing for easier expansion and maintenance.
+- In general, add docstrings to your functions to improve readability and explain their purpose and parameters.
+Brief justification:
+- correctness: Most exercises are correctly implemented and produce the expected output as specified in the chapter content. Exercise 6 has issues with global variable usage and function parameter handling. Exercise 7's bonus features are implemented but could be more sophisticated.
+- readability: The code is generally well-formatted and easy to understand. Variable names are descriptive.  The use of f-strings enhances readability. However, adding docstrings would significantly improve clarity.
+- performance: The code's performance is acceptable for these small tasks. There are no obvious inefficiencies.
+- security: There are no security concerns in this code because it's a simple educational exercise with no user input validation that could lead to security vulnerabilities.
+
