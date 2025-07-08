@@ -1,0 +1,16 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W7/W7D1/W7D1Ch/W7D1Ch.sql
+suggestions for improvement:
+- The table name was misspelled as `employes` instead of `employees` in the initial `CREATE TABLE` statement and in several subsequent queries.  This should be corrected for consistency.
+- The query to find and delete rows with missing values needs to be changed to handle `NULL` in the `department` column appropriately. It currently does not update `department` values to a meaningful replacement. 
+- The duplicate row check incorrectly uses `ROW_NUMBER()` which is only useful if you want to see what rows are duplicates; it does not remove them.  A `DELETE` statement with a `WHERE` clause using `ROW_NUMBER()` is needed, or better, use `GROUP BY` and `HAVING COUNT(*) > 1`.
+- The outlier detection is good, but the results are not used to modify the dataset.  The chapter asks for outlier handling, implying some action should be taken (e.g., removing them or replacing with a more appropriate value).
+- The normalization query calculates normalized salary but doesn't update the table.  The chapter expects that the data is actually standardized or normalized, not just that it's calculated.
+- Add comments to explain the purpose of each step more clearly.
+- Consider using more efficient methods for data cleaning, such as using `CASE` statements within the `UPDATE` rather than multiple `UPDATE` statements. 
+- For better readability, break down complex queries into smaller, more manageable parts. For example the outlier detection could be broken down into multiple CTEs making it more readable
+Brief justification:
+- correctness: The code addresses most of the tasks outlined in the chapter. It attempts to handle missing values, detect and (partially) address duplicates, correct data types, detect outliers, and standardize/normalize data. However, it does not successfully remove duplicate rows, fully handle missing `department` values, take action on outliers or fully implement normalization; the normalized values are only shown in a `SELECT` statement, not stored in the table.  The misspelling of `employees` is a significant flaw but does not stop the basic functionality. Thus, a score of 80% is appropriate.
+- readability: The code's readability could be improved by using more descriptive variable names and adding comments to explain the logic behind each step. The use of CTEs is generally good but some steps could be further broken down to enhance readability. A score of 75% reflects the need for some clarity improvements.
+- performance: The code's performance is relatively good, especially considering the dataset size.  However, the approaches used (multiple updates, explicit row-by-row operations which are often less efficient than set-based operations) could be improved with better SQL optimization techniques. A score of 80% is given, acknowledging the possibility of better approaches for improved performance.
+- security: The code does not have any obvious security vulnerabilities.  It only interacts with a database, and there is no external input being processed, so the security score is 100%.
+
