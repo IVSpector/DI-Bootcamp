@@ -1,0 +1,11 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W6/W6D2/W6D2Ch/W6D2Ch.sql
+suggestions for improvement:
+- The comments predicting the output of the queries are partially incorrect.  NULL comparisons in SQL are not straightforward.  `NOT IN` with a subquery containing NULL values yields unpredictable results.
+- Add actual execution of the queries and compare the predicted output with the actual output. This would make the solution more robust and demonstrate a clear understanding.
+- Clearly separate the SQL code from the predicted output and actual output for each query. This will improve the readability and clarity of the solution.
+Brief justification:
+- correctness: The code correctly creates the tables and inserts data as specified in the problem. However, the predictions for the `COUNT(*)` queries are not entirely accurate because the handling of NULL values in `NOT IN` is not correctly considered.  The queries themselves are valid SQL and directly address the problem of counting rows based on conditions involving table relationships. The chapter focuses on SQL basics and table relationships; therefore, the code directly addresses the chapter content. The partial correctness stems from the inaccurate predictions about NULLs.
+- readability: The code is well-formatted and easy to read. The comments attempting to explain the reasoning behind the predictions improve readability. However, this can be significantly enhanced by clearly separating the code, predicted output, and actual output. The comments would be much more useful if they contained the actual results after execution.
+- performance: The SQL queries are efficient and directly address the problem. There are no performance bottlenecks or unnecessary operations.
+- security: The code does not involve any security concerns as it only deals with creating tables and running simple queries. No sensitive data is handled.
+

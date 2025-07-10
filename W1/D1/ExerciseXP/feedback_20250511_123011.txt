@@ -1,0 +1,15 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W1/D1/ExerciseXP/ExerciseW1D1.py
+suggestions for improvement:
+- Exercise 3: The code for comparing strings and numbers is partially incorrect.  String comparison with numbers in Python will result in a TypeError, not an error as stated; it should be handled appropriately.  The comparison of "Hello" and "hello" should be corrected (case-sensitivity).
+- Exercise 7: The code incorrectly labels even numbers as 'Odd' and vice-versa.  Reverse the print statements inside the if/else block.
+- Exercise 8: The 'My name is better' message is not funny,  as specified in the instructions. Update for a more humorous message.
+- Exercise 5: Improve the info sentence for better grammar and clarity. The current sentence is somewhat awkwardly phrased.  Consider using more descriptive phrasing.
+- Add comments to your code to explain the logic of more complex parts.
+- Use more descriptive variable names (e.g., instead of `a` and `b`, use names that indicate their purpose).
+- Consider adding error handling (like using `try-except` blocks) to handle potential user input issues more gracefully (e.g., non-numeric height in Exercise 9).
+Brief justification:
+- correctness: Most exercises are correctly implemented except for some minor logical flaws in Exercises 3, 7, and 8. The code mostly adheres to the instructions.  The errors are fixable with minor changes. Exercise 3 incorrectly describes the error of comparing a string and a number. Exercises 7 and 8 have incorrect logic and a non-humorous message respectively.
+- readability: The code is generally readable and well-structured, but variable names could be more descriptive (especially in Exercise 6). Adding comments would further improve readability.
+- performance: The code's performance is efficient for the tasks performed. There are no unnecessary computations or inefficient algorithms.
+- security: The code does not present any security vulnerabilities, as it doesn't handle external data or interact with systems that could be exploited.
+

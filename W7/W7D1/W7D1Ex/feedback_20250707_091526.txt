@@ -1,0 +1,14 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W7/W7D1/W7D1Ex/W7D1Ex.sql
+suggestions for improvement:
+- In Exercise 1, the code uses `*` in the SELECT statement which might lead to issues with column name conflicts or unnecessary data retrieval.  It should explicitly list the desired columns from each table.
+- Exercise 2's `UPDATE` statement could be improved by using a single `TRIM` function on a concatenated string for better performance and readability. The DELETE statement with a CTE is a good approach, but it could be optimized by directly deleting from `df_employee` using a `WHERE` clause involving the conditions in the CTE.
+- Exercise 2 does not handle empty strings or other invalid values in `salary` column that might cause issues in numerical operations.  Explicit data type validation should be implemented.
+- In Exercise 4, the percentage calculation in the first query could be simplified to avoid using `OVER()` if the total count is already known. The use of `AVG(COUNT(*)) OVER()` might not be entirely accurate for calculating the average number of employees in the second query; it calculates the average of the counts of each month.
+- Exercise 5's queries to find minimum and maximum employee counts could be simplified to use a single query with window functions `MIN() OVER()` and `MAX() OVER()`.
+- The code lacks error handling and assumes the data is perfectly structured, which might not be the case in real-world scenarios. Add error handling, data validation, and better input sanitization for increased robustness.
+Brief justification:
+- correctness: The code addresses most aspects of the exercises outlined in the chapter. It performs joins, cleaning, and analysis tasks as specified. However, there are some minor inaccuracies and inefficiencies in the implementation, as noted in the feedback. The core functionality related to data cleaning and analysis using SQL is largely correct, earning a score of 90%.
+- readability: The code is generally readable but could be improved with more descriptive variable names, comments, and better structuring in some places (such as combining similar UPDATE operations).  The use of CTEs is positive for readability. The overall readability score is 85%.
+- performance: The performance could be significantly improved by optimizing queries with appropriate indexes, avoiding unnecessary data retrieval (using `*` in SELECT), and using more efficient approaches for cleaning and data manipulation. The current implementation has some inefficiencies, leading to a performance score of 75%.
+- security: The code doesn't have any apparent security vulnerabilities. It only deals with data manipulation within a database; thus, no external inputs or sensitive information are being handled.  The security score is 100%.
+

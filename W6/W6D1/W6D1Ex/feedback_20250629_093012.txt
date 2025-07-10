@@ -1,0 +1,11 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W6/W6D1/W6D1Ex/W6D1Ex.sql
+suggestions for improvement:
+- Use more descriptive names for columns (e.g., `item_id`, `item_name`, `customer_id`, `first_name`, `last_name`).
+- Add comments to explain the purpose of each SQL query, especially for more complex queries.
+- Consider adding data validation constraints to the tables (e.g., checking for price ranges, non-null constraints).
+Brief justification:
+- correctness: The code accurately creates the 'items' and 'customers' tables with the specified columns and data types. It correctly inserts the provided data into the tables. All the SQL queries accurately fetch the data as requested in the exercise, demonstrating a complete understanding of retrieving data with various conditions (e.g., >, <, =, <>).  This directly addresses all aspects of the chapter's content on creating databases, tables, inserting and retrieving data.
+- readability: The code is well-formatted and easy to understand. The SQL queries are straightforward and concise. Minor improvements in naming conventions would enhance readability further.
+- performance: The SQL queries are efficient for the given dataset size.  For larger datasets, optimization techniques could be considered, but for this exercise, performance is excellent.
+- security: No security vulnerabilities are present in this code snippet as it only deals with creating and querying a local database.  No user input or external data is involved.
+

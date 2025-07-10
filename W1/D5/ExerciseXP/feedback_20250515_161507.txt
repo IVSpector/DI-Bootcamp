@@ -1,0 +1,14 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W1/D5/ExerciseXP/W1D2Ex.py
+suggestions for improvement:
+- Improve error handling in `player_input()` to provide more specific error messages. For example, instead of a generic "Try again", indicate which input was invalid (row or column).
+- The `check_win()` function can be simplified and made more readable using nested loops or list comprehensions.
+- Add a clear prompt at the beginning of the game explaining the rules and how to input moves.
+- The `tie()` function can be simplified: checking for empty spaces is sufficient to determine a tie. No need for string manipulation
+- Consider using a more descriptive variable name than `table` for the game board, e.g., `board` or `tic_tac_toe_board`.
+- The game's logic regarding player turns could be improved for clarity. It is a bit convoluted. A dedicated variable to keep track of the current player's symbol would make the code cleaner.
+Brief justification:
+- correctness: The code implements a functional Tic Tac Toe game. It handles player input, updates the board, checks for wins and ties, and displays the board correctly. However, error handling in player input could be more precise.  The win check is functional but can be improved for readability.  It mostly aligns with the Chapter Content/Questions, providing all the core functionalities requested.
+- readability: The code is understandable, but some functions, particularly `check_win()`, could be improved for clarity and conciseness.  Variable names could be more descriptive.  The overall structure is good, using separate functions for different tasks as suggested. However it is not optimally readable.
+- performance: The code's performance is adequate for a simple Tic Tac Toe game. There are no obvious performance bottlenecks. The algorithms used are efficient for their purpose.
+- security: No security vulnerabilities are present in this code, as it's a simple, self-contained game with no external inputs or data handling.
+
