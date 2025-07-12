@@ -1,0 +1,12 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W7/W7D4/W7D4Ex/W7D4Ex.ipynb
+suggestions for improvement:
+- Exercise 1: The code correctly creates an Excel workbook and adds values and formulas. However, error handling (e.g., checking if the file already exists) could be improved.  The use of literal numbers (2 and 8) instead of variables reduces flexibility and readability.
+- Exercise 2: The code successfully iterates through the plant list and identifies those not in stock.  Add more robust error handling (e.g., checking if the file exists, handling unexpected data types). Consider using more descriptive variable names.
+- Exercise 3: The code correctly loads, filters, and writes data to an Excel file.  Add error handling to check for file existence and handle potential exceptions during file operations. The code also overwrites the sheet rather than adding a new sheet if it already exists.
+- Exercise 4:  The code accurately reads the Excel file, groups and sums the sales data, and exports it to a new Excel file. However, it misses the chart creation step specified in the instructions.  Consider more descriptive variable names and adding error handling.
+Brief justification:
+- correctness: The code addresses most aspects of the exercises correctly. Exercise 1 creates a calculator as instructed. Exercise 2 finds out-of-stock plants. Exercise 3 filters and writes data. Exercise 4 performs data manipulation and export, however it lacks the chart plotting component mentioned in the instructions.  Minor flaws in error handling and variable naming reduce the overall correctness score.
+- readability: The code is generally readable but could be improved with more descriptive variable names (e.g., instead of 'wb' use 'workbook').  Adding comments to explain complex logic would also enhance readability.  The use of literal numbers reduces readability and flexibility.
+- performance: The code's performance is acceptable for small datasets.  For larger datasets, optimizing file I/O operations (e.g., using iterators instead of loading the entire DataFrame at once) could be beneficial. The code's efficiency could also be improved by using more optimized pandas operations whenever possible.
+- security: The code does not present any security vulnerabilities because it only deals with local file operations; there's no network access or user input that could introduce security risks.
+
