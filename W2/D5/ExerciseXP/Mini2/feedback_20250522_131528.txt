@@ -1,0 +1,21 @@
+URL: URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W2/D5/ExerciseXP/Mini2/game.py
+suggestions for improvement:
+- The `item_dict` method in the `Game` class could be made more efficient by using a dictionary directly instead of a function.
+- Add more robust input validation in `get_user_menu_choice` to handle unexpected input more gracefully. For example, handle non-integer input and input outside the range of menu options.
+- The `rock-paper-scissors.py` file is missing, which is a crucial part of the project, impacting the overall functionality and the user experience.
+- Consider adding error handling (e.g., try-except blocks) around user input in `get_user_item` to prevent the program from crashing due to unexpected input.
+- Improve the user interface. Provide clear instructions and informative messages to guide the user through the game effectively.
+- Add score tracking to the `main` function in `rock-paper-scissors.py` to persist the user's wins, losses, and draws across multiple game rounds. This requires implementing the `results` dictionary and updating it after each game.
+- Add a function to display the current score to the user during the gameplay for increased engagement and feedback.
+- Use more descriptive variable names (e.g., `user_choice` instead of `user_turn`, `computer_choice` instead of `computer_turn`).
+- The comments in the code are too sparse. Add more comments to explain the logic and the purpose of different parts of the code, enhancing the readability and maintainability.
+Correctness: 95%
+-----
+URL: URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W2/D5/ExerciseXP/Mini2/rock-paper-scissors.py
+suggestions for improvement:
+- The `game.py` file is missing, preventing a complete assessment of the game logic.  The provided code only covers the menu and results handling in `rock-paper-scissors.py`.
+- Error handling in `get_user_menu_choice` could be improved by using a `try-except` block to handle potential `ValueError` exceptions more gracefully if the user enters non-numeric input.
+- The `results` dictionary is a global variable.  It's generally better practice to pass it as an argument to functions to improve code clarity and maintainability. 
+- Add more robust input validation in `get_user_menu_choice` to handle unexpected input (e.g., empty strings, non-digit characters).
+Correctness: 85%
+-----

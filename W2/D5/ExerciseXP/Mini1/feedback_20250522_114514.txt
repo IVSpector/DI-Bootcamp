@@ -1,0 +1,18 @@
+URL: URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W2/D5/ExerciseXP/Mini1/anagram_checker.py
+suggestions for improvement:
+- The `anagram_checker.py` file should be separated from UI logic.  The provided code mixes class definition and execution, making it harder to test and maintain.  Separate the `AnagramChecker` class definition into `anagram_checker.py` and create a separate `anagrams.py` file for UI interaction, as specified in the instructions.
+- Error handling is missing. The program should gracefully handle cases where the input file is not found or contains unexpected data. Add `try-except` blocks to catch potential `FileNotFoundError` or `IOError` exceptions.
+- The `is_anagram` function's efficiency can be significantly improved by sorting the letters of both words and then comparing them. The current implementation has O(n*m) time complexity, where n and m are the lengths of the words. Sorting improves it to O(n log n).
+- The `get_anagrams` function returns `False` if the input word is not valid.  It should return an empty list instead for better consistency and clarity.
+- The code doesn't handle case sensitivity consistently; it converts input to uppercase but might compare with lowercase words if present in the word list. Consistent case handling is important for accurate anagram detection.
+- Add more comprehensive docstrings to the methods and the class explaining their functionalities, parameters, return values and other important information.
+Correctness: 85%
+-----
+URL: URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W2/D5/ExerciseXP/Mini1/anagrams.py
+suggestions for improvement:
+- The `anagram_checker.py` file is missing from the provided code.  The assessment cannot be complete without seeing the implementation of the `AnagramChecker` class.
+- Error handling could be improved. Instead of just printing error messages, the program could loop back to the input prompt, allowing the user to retry.
+- The performance could be improved by optimizing the anagram search algorithm within the `AnagramChecker` class.  Currently, the efficiency is unknown without seeing that class's implementation. Consider using more efficient data structures or algorithms if necessary.
+- Add more comprehensive input validation to handle edge cases (e.g., empty input).
+Correctness: 85%
+-----

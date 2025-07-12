@@ -1,0 +1,11 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W6/W6D1/W6D1Ch/W6D1Ch.sql
+suggestions for improvement:
+- The date format in some `INSERT` statements is inconsistent.  Use a consistent format (YYYY-MM-DD) for better database compatibility and readability. 
+- The instructions ask to try adding a new actor with blank fields.  The code attempts this, but comments that an error is caught rather than explicitly showing the error (and explaining it).  Add a statement showing the error message.
+- Add a commit message when pushing to GitHub.  This helps track changes and makes collaboration easier. Consider adding meaningful commit messages like "Added initial actors data" or "Tried inserting with NULL values".
+Brief justification:
+- correctness: The code correctly creates the `actors` table, inserts data, counts the number of actors, and attempts to insert a row with a NULL value (partially fulfilling the second instruction).  The date format inconsistencies and lack of explicit error handling slightly reduce the correctness score. The code directly addresses the tasks in the Chapter Content/Questions, making it relevant to the chapter.
+- readability: The SQL code is well-formatted and easy to understand. The use of comments makes it more understandable.  However, the inconsistent date format reduces readability. The overall readability is high despite these minor issues.
+- performance: The SQL queries are efficient. For the small dataset, performance is not a major concern, but the use of efficient SQL commands (SELECT COUNT(*) rather than SELECT *) contributes to a high score.
+- security: No security vulnerabilities are apparent in the provided code.  The code only interacts with a local database without any network connections that could be exposed to attack.
+

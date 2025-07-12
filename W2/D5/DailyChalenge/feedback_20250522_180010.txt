@@ -1,0 +1,7 @@
+URL: URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W2/D5/DailyChalenge/W2D5ch.py
+suggestions for improvement:
+- The Exercise 1 answers are good, but could benefit from being more concise and avoiding redundancy (e.g., combining the explanations of inheritance and multiple inheritance).
+- In the `Deck` class, consider adding error handling (e.g., a more informative message) for the `deal` method when the deck is empty.
+- The code lacks docstrings explaining the purpose of each class and method which would improve readability.
+Correctness: 95%
+-----

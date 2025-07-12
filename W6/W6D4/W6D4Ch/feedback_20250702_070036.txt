@@ -1,0 +1,14 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W6/W6D4/W6D4Ch/W6D4Ch.sql
+suggestions for improvement:
+- **Exercise 1, Task 1:** The query for `competitor_seasons` doesn't accurately reflect the task.  It counts medals, but doesn't explicitly check for participation in both Summer and Winter Olympics. It should filter for competitors with medals in both seasons. The `HAVING` clause needs adjustment to reflect this.
+- **Exercise 1, Task 2:** The logic for identifying competitors with medals in exactly two sports is correct in the CTE, but the final `SELECT` statement incorrectly joins back to the main tables to count total medals. It should only use the `competitor_two_sport` temporary table and a subquery to rank based on the total number of medals.
+- **Exercise 2, Task 1:** The approach to finding regions with the highest number of medals needs improvement. It creates a temporary table that doesn't efficiently track regional medal totals. The final `SELECT` statement needs a more direct way to find the top 5 regions.
+- **Exercise 2, Task 2:** The query for `competitor_no_medal` correctly identifies competitors with more than three participations and no medals. The code is functional but can be improved for clarity and efficiency.
+- Improve query readability by using more descriptive aliases for tables and columns.
+- Optimize queries for better performance; some queries involve unnecessary joins that can be avoided.
+Brief justification:
+- correctness: The code attempts to address all tasks, but some queries contain logical errors that prevent them from producing entirely correct results as specified in the chapter.  For example, Exercise 1, Task 1 incorrectly handles the 'both Summer and Winter' requirement. Exercise 1, Task 2 has an inefficient final select statement.  Exercise 2 has some logical flaws. Overall, the code demonstrates a partial understanding of the tasks but lacks the precision required for a higher correctness score.
+- readability: The code's readability is hampered by the use of less descriptive aliases and somewhat convoluted logic in some sections.  Better naming conventions and more straightforward query structures would enhance readability significantly.
+- performance: The performance could be significantly improved. Some queries perform unnecessary joins or could be optimized with window functions. Creating temporary tables within CTEs can also be inefficient in some scenarios.
+- security: No security vulnerabilities are present in the provided SQL code.
+

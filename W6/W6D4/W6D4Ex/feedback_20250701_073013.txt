@@ -1,0 +1,12 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W6/W6D4/W6D4Ex/W6D4Ex.sql
+suggestions for improvement:
+- Improve formatting and commenting for better readability. Add more descriptive names to temporary tables.
+- Optimize queries by using appropriate indexes and avoiding unnecessary joins. For example, in Task 2, it might be more efficient to first pre-aggregate the count of events per competitor before joining with region data.
+- In Task 4, the DELETE statement could be simplified and made more efficient by directly deleting based on a subquery on the 'person' table instead of creating an intermediate temporary table.
+- Add error handling to the queries to gracefully handle potential issues like database connection errors or data inconsistencies.
+Brief justification:
+- correctness: The code generally addresses the tasks outlined in the chapter content, but there are some inaccuracies. Task 1 correctly uses a correlated subquery but the `WHERE 0=0` clause is unnecessary and could be detrimental for performance. Task 2 is partially correct, using nested subqueries, but may suffer from performance issues due to inefficient subquery structure. Tasks 3 and 4 successfully employ subqueries to manage temporary tables and filtering, although they are somewhat inefficient and could be improved. In Task 4 the DELETE from `all_competitors` may delete unwanted data if it's not the only table containing `person_id`.
+- readability: The code's readability is hampered by a lack of consistent formatting and inline commenting.  While the code is mostly understandable, more descriptive variable names and better structuring would greatly improve its readability.  The use of `WHERE 0=0` is poor practice and detracts from readability.
+- performance: The performance of several queries could be significantly improved. For instance, the nested subqueries in Task 2 can lead to performance bottlenecks with large datasets.  The creation and use of multiple temporary tables also introduces overhead. The lack of indexing may further compound the performance issue.
+- security: The code doesn't contain any obvious security vulnerabilities. It operates solely on the provided database without interacting with external resources or user input that could pose security risks.  The use of temporary tables is generally safe.
+
