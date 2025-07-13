@@ -1,0 +1,16 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W7/W7D5/W7D5Ex/W7D5Ex.ipynb
+suggestions for improvement:
+- **Exercise 1:** The code correctly parses the provided HTML and extracts the title, paragraphs, and links as requested. However, it relies on a hardcoded HTML string instead of fetching a webpage using `urlopen()`, as instructed in the exercise.  This makes the solution less flexible and doesn't fully demonstrate the intended web scraping functionality.
+- **Exercise 5:** The code successfully scrapes the number of security alerts from the US-CERT website, handling pagination. However,  error handling (e.g., what happens if the website structure changes?) is missing, and the use of `datetime.now().year` for comparison isn't robust across all time zones.
+- **Exercise 6:** The code cleverly uses JSON-LD embedded within the webpage to get movie details.  This is a more efficient approach than parsing the entire HTML structure. It elegantly handles scenarios where JSON-LD data might not be available.  It also properly handles the random selection of 10 movies.
+- Add error handling to all exercises.  For instance, wrap network requests in `try...except` blocks to catch potential exceptions like `URLError` or `HTTPError`.  Consider using more descriptive variable names in Exercise 1 and other exercises.
+- Improve the performance of Exercise 5 by implementing a more efficient method for parsing the page. Currently, the code iterates through many elements even though there are only a few relevant sections.
+- In Exercise 5, explicitly handle the possibility that the structure of the webpage might change. The program may break if changes happen on the target page.
+- For security, add user agent spoofing in all exercises that involve network requests. While this is done in Exercise 6, it is absent in others.
+- In Exercise 3, the code correctly extracts and displays header tags. It could be improved by incorporating error handling (e.g., for network issues).
+Brief justification:
+- correctness: Exercises 1, 3, and 6 correctly perform the tasks described, though Exercise 1 uses hardcoded HTML, not `urlopen`. Exercise 2 and 5 also work correctly, but lack comprehensive error handling; Exercise 5's reliance on `datetime.now()` might produce unexpected results across timezones.
+- readability: The code is generally well-structured and easy to follow. Variable names could be more descriptive in some instances. Consistent indentation and comments would enhance readability even further.
+- performance: The performance is acceptable for the small datasets involved.  Exercise 5 could be significantly optimized by targeting specific elements and avoiding unnecessary iterations.  Exercise 2 and 3 could also be improved in terms of performance, but to a lesser extent.
+- security: The code lacks robust security measures, aside from the User-Agent spoofing in Exercise 6.  Adding error handling and input validation would be important steps to enhance security.  Excessive requests, without pauses between calls, could lead to the scraper being blocked.
+

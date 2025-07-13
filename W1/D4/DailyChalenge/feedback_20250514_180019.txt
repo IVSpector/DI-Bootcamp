@@ -1,0 +1,15 @@
+URL: https://github.com/IVSpector/DI-Bootcamp/blob/main/W1/D4/DailyChalenge/W1D4Cha.py
+suggestions for improvement:
+- The code does not correctly transform the matrix string into a 2D list suitable for column-wise processing. It concatenates characters into a single string, instead of creating a list of lists.
+- The logic for column-wise processing and alphabetic character filtering is completely missing. The code iterates through the string in a non-sensical manner and does not handle symbols correctly.
+- The code uses a very inefficient method for building the `new_matrix` string, repeatedly creating and modifying the string instead of appending to it.
+- The code lacks comments, making it hard to follow.  Variable names could be more descriptive.
+- The algorithm is not extracting the information column-wise as described in the task.
+- The commented-out `matrix_2d` function suggests an attempt at creating a 2D list, but it's not used and doesn't even correctly return the 2D list.
+- The space replacement logic is incorrect and doesn't adhere to the chapter's instructions; it replaces all non-alpha characters with spaces indiscriminately.
+Brief justification:
+- correctness: The code fails to meet the core requirements of the chapter: transforming the input string into a 2D list, processing it column-wise, filtering alphabetic characters, and replacing symbol groups with spaces.  The algorithm incorrectly processes the data and does not achieve the expected output. It does not follow the steps outlined for decryption in any way.
+- readability: The code's structure and variable names are not intuitive. The lack of comments and the unusual way of building `new_matrix` hinder readability. The commented-out function further reduces readability.
+- performance: While the individual operations are relatively simple, the repeated string manipulation in the `new_matrix` construction is inefficient.  A more efficient approach would involve building the string using list concatenation or string joining methods after processing the columns correctly.
+- security: There are no security vulnerabilities in this code because it only deals with string manipulation and does not interact with external resources or handle user input.
+
