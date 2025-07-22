@@ -15,3 +15,7 @@ config.json
 # Ignore Python cache
 __pycache__/
 *.py[cod]
+
+# Ignore session
+anon.session
+.session
