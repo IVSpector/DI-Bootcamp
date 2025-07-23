@@ -1,11 +1,11 @@
 DI-Bootcamp-Hackathon-2/
 Project/
-ParserTelegram.py
-ParserYAD2.py
+Project/ParserTelegram.py
+Project/ParserYAD2.py
 
 # Ignore virtual environments
 venv/
-.env/
+Project/.env/
 *.env
 
 # Ignore config files
